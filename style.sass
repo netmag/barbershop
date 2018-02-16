@@ -1,238 +1,289 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic')
 
 body 
-	margin: 0
-	padding: 0
-	font-family: "PT Sans Narrow", Arial, sans-serif
-	font-size: 14px
-	line-height: 24px
-	font-weight: 700
-	color: #fff
-	text-transform: uppercase
-	background-color: #000
-	background-image: url("img/tint.jpg")
-	background-position: top center
-	background-repeat: no-repeat
+  margin: 0
+  padding: 0
+  font-family: "PT Sans Narrow", Arial, sans-serif
+  font-size: 14px
+  line-height: 24px
+  font-weight: 700
+  color: #fff
+  text-transform: uppercase
+  background-color: #000
+  background-image: url("img/tint.jpg")
+  background-position: top center
+  background-repeat: no-repeat
 a 
-	text-decoration: none
+  text-decoration: none
 .item-body, .shop-body
-	background-image: url("img/fon-item.jpg")
-	background-position: 0 0
-	background-repeat: repeat
+  background-image: url("img/fon-item.jpg")
+  background-position: 0 0
+  background-repeat: repeat
 .button
-	font: inherit
-	text-align: center
-	color: #fff
-	vertical-align: middle
-	text-transform: uppercase
-	background-color: #000
-	border: none
-	&:hover, &:focus, &:active
-		background-color: #663d15
+  font: inherit
+  text-align: center
+  color: #fff
+  vertical-align: middle
+  text-transform: uppercase
+  background-color: #000
+  border: none
+  &:hover, &:focus, &:active
+    background-color: #663d15
 
 .main-navigation
-	color: #fff
-	font-size: 16px
-	line-height: 20px
-	background-color: #000
+  color: #fff
+  font-size: 16px
+  line-height: 20px
+  background-color: #000
 
 .site-navigation, .user-navigation, .features-list, 
 .news-list, .breadcrumbs, .catalog-list, .pagination-list
-	list-style: none
+  list-style: none
 
 .site-navigation, .user-navigation
-	a 
-		color: #fff
-		&:hover, &:focus, &:active
-			background-color: #242424
+  a 
+    color: #fff
+    &:hover, &:focus, &:active
+      background-color: #242424
 // item.html
 .page-title
-	font-family: inherit
-	color: #000
-	font-size: 30px
-	font-weight: 700
-	line-height: 42px
+  font-family: inherit
+  color: #000
+  font-size: 30px
+  font-weight: 700
+  line-height: 42px
 .breadcrumbs 
-	font-family: inherit
-	font-size: 14px
-	font-weight: 700
-	line-height: 24px
-	a	
-		color: #000	
-	.breadcrumbs-current
-		color:  #aba9a7
+  font-family: inherit
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  a 
+    color: #000 
+  .breadcrumbs-current
+    color:  #aba9a7
 
 .features-item
-	text-align: center
-	h3 
-		font-size: 30px
-		line-height: 42px
+  text-align: center
+  h3 
+    font-size: 30px
+    line-height: 42px
 .product-photo-full img, .product-photo-preview img
-	box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2)
-.product-info
-	font-family: inherit
-	font-size: 14px
-	font-weight: 700
-	line-height: 24px
-	color: #000
-	.product-article
-		color: #aeaeae
-		text-align: right
-	.product-price
-		// width: 187px
-		// height: 43px
-		b
-			background-color: #e5e5e5
-			background-image: url("img/fon-price.jpg")
-			background-repeat: no-repeat
-			text-align: center
-			line-height: 20px
-		a 
-			text-align: center
-			line-height: 20px
-	h3 
-		font-size: 24px
-		font-weight: 700
-		line-height: 30px
-	ul 
-		list-style-image: url("img/Shape.svg")
+  box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2)
+.product-info, .facilites-prices
+  font-family: inherit
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  color: #000
+  .product-article
+    color: #aeaeae
+    text-align: right
+  .product-price
+    b
+      background-color: #e5e5e5
+      background-image: url("img/fon-price.jpg")
+      background-repeat: no-repeat
+      text-align: center
+      line-height: 20px
+    a 
+      text-align: center
+      line-height: 20px
+  h3 
+    font-size: 24px
+    font-weight: 700
+    line-height: 30px
+  ul
+    list-style-image: url("img/Shape.svg")
 //--------------------------
 
 // shop.html
 .filters
-	font-family: inherit
-	color: #000
-	legend
-		font-size: 24px
-		font-weight: 700
-		line-height: 42px
-	.filter-option
-		list-style: none
-		font-size: 14px
-		font-weight: 700
-		line-height: 30px
+  font-family: inherit
+  color: #000
+  legend
+    font-size: 24px
+    font-weight: 700
+    line-height: 42px
+  .filter-option
+    list-style: none
+    font-size: 14px
+    font-weight: 700
+    line-height: 30px
 .catalog-item
-	box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2)
-	width: 220px
-	height: 286px
-	font-family: "PT Sans Narrow", Arial, sans-serif
-	font-size: 14px
-	font-weight: 700
-	line-height: 18px
-	background-color: #fff
-	.catalog-category, .catalog-item-title
-		color: #000
-		text-align: left
-	.catalog-item-title
-		text-transform: uppercase
-	b
-		background-color: #e5e5e5
-		background-image: url("img/fon-price.jpg")
-		background-repeat: no-repeat
-		text-align: center
-		line-height: 20px
-		color: #000
+  box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2)
+  width: 220px
+  height: 286px
+  font-family: "PT Sans Narrow", Arial, sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 18px
+  background-color: #fff
+  .catalog-category, .catalog-item-title
+    color: #000
+    text-align: left
+  .catalog-item-title
+    text-transform: uppercase
+  b
+    background-color: #e5e5e5
+    background-image: url("img/fon-price.jpg")
+    background-repeat: no-repeat
+    text-align: center
+    line-height: 20px
+    color: #000
 .pagination-list
-	.pagination-item
-		width: 43px
-		height: 43px
-		background-color: #000
-		text-align: center
-		font-size: 14px
-		font-weight: 700
-		line-height: 18px
-		a 
-			color: #fff
-			padding: 12px 17px 12px 17px
-			line-height: 42px
-	.pagination-item-current
-		background-color: #fff
-		a
-			color: #000
-			padding: 0
-			line-height: 42px
+  .pagination-item
+    width: 43px
+    height: 43px
+    background-color: #000
+    text-align: center
+    font-size: 14px
+    font-weight: 700
+    line-height: 18px
+    a 
+      color: #fff
+      padding: 12px 17px 12px 17px
+      line-height: 42px
+  .pagination-item-current
+    background-color: #fff
+    a
+      color: #000
+      padding: 0
+      line-height: 42px
+//---------------------------
+
+// price.html
+.price-title
+  overflow: hidden
+  text-align: center
+  h2
+    display: inline-block
+    vertical-align: middle
+    font-family: "PT Sans Narrow", Arial, sans-serif
+    color: #000
+    font-size: 48px
+    font-weight: 700
+    line-height: 20px
+  &:before,
+  &:after 
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    width: 100%
+    height: 2px
+    background-color: #000
+    position: relative
+  &:before
+    margin-left: -100%
+    left: -26px
+  &:after
+    margin-right: -100%
+    right: -26px  
+
+.facilites-prices, .price-about
+  h3
+    color: #000
+    font-size: 24px
+    font-weight: 700
+    line-height: 30px
+  table
+    border-spacing: 0px
+    border-color: black
+    td
+      width: 231px
+  .left
+    line-height: 0
+    text-align: left
+  .center
+    line-height: 0
+    text-align: center
+.price-about p 
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  color: #000
+//------------------------
 
 .index-collumns
-	color: #000
-	background-color: #F8F5F2
-	background-image: url("img/pattern-light.jpg")
-	background-position: 0 0
-	background-repeat: repeat
-	h2 
-		font-size: 30px
-		line-height: 42px
+  color: #000
+  background-color: #F8F5F2
+  background-image: url("img/pattern-light.jpg")
+  background-position: 0 0
+  background-repeat: repeat
+  h2 
+    font-size: 30px
+    line-height: 42px
 
 .news-item time
-	text-transform: none
+  text-transform: none
 
 .gallery-content
-	background-color: #ccc
-	border: 7px solid #fff
-	line-height: 0
+  background-color: #ccc
+  border: 7px solid #fff
+  line-height: 0
 
 .appointment-item input
-	font: inherit
-	background-color: transparent
-	border: 2px solid #000
-	&:focus
-		border-color: #663D15
-		outline: none
+  font: inherit
+  background-color: transparent
+  border: 2px solid #000
+  &:focus
+    border-color: #663D15
+    outline: none
 
 .main-footer
-	color: #fff
-	background-color: #212121
-	background-image: url("img/footer-fon.jpg")
-	background-position: 0 0
-	background-repeat: repeat
+  color: #fff
+  background-color: #212121
+  background-image: url("img/footer-fon.jpg")
+  background-position: 0 0
+  background-repeat: repeat
 
 .footer-contacts a
-	color: #fff
-	text-decoration: underline
-	&:hover, &:focus
-		text-decoration: none
+  color: #fff
+  text-decoration: underline
+  &:hover, &:focus
+    text-decoration: none
 
 .footer-social
-	text-align: center
-	ul
-		list-style: none
+  text-align: center
+  ul
+    list-style: none
 
 .social-button
-	color: #fff
+  color: #fff
 
 .footer-copyright
-	text-align: center
-	.button
-		&:hover, &:focus
-			color: #000
-			background-color: #fff
+  text-align: center
+  .button
+    &:hover, &:focus
+      color: #000
+      background-color: #fff
 
 .modal
-	color: #000
-	background-color: #F8F3F0
-	background-image: url("img/pattern-light.jpg")
-	background-position: 0 0
-	background-repeat: repeat
-	h2 
-		font-size: 30px
-		line-height: 42px
+  color: #000
+  background-color: #F8F3F0
+  background-image: url("img/pattern-light.jpg")
+  background-position: 0 0
+  background-repeat: repeat
+  h2 
+    font-size: 30px
+    line-height: 42px
 
 .login-form
-	input[type="text"], input[type="password"]
-		font: inherit
-		color: #000
-		text-transform: uppercase
-		background-color: #f9f6f3
-		border: 2px solid #000
-		&:focus
-			border-color: #663D15
-			outline: none
+  input[type="text"], input[type="password"]
+    font: inherit
+    color: #000
+    text-transform: uppercase
+    background-color: #f9f6f3
+    border: 2px solid #000
+    &:focus
+      border-color: #663D15
+      outline: none
 
 .login-checkbox
-	&:hover, &:focus
-		color: #663D15
+  &:hover, &:focus
+    color: #663D15
 
 .restore
-	color: #000
-	text-decoration: underline
-	&:hover, &:focus
-		text-decoration: none
+  color: #000
+  text-decoration: underline
+  &:hover, &:focus
+    text-decoration: none
