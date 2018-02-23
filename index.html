@@ -7,54 +7,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/index-logo.png" alt='Логотип барбершопа "Бородинский"' width="386" height="153">
       </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="info.html">Информация</a>
-        </li>
-        <li>
-          <a href="news.html">Новости</a>
-        </li>
-        <li>
-          <a href="price.html">Прайс-лист</a>
-        </li>
-        <li>
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="login-link">
-          <a href="login.html">Вход</a>
-        </li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="container-center">
+          <ul class="site-navigation">
+            <li>
+              <a href="info.html">Информация</a>
+            </li>
+            <li>
+              <a href="news.html">Новости</a>
+            </li>
+            <li>
+              <a href="price.html">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="login-link">
+              <a href="login.html">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <main class="container">
-  <!-- Скрытый - чтоб не виден потому что нету, зачем - хочется чтоб был -->
+  <main class="container-center">
+
     <h1 class="visually-hidden">
       Барбершоп "Бородинский"
     </h1>
-  <!-- ////////// -->
+
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
         <li class="features-item">
           <h3>Быстро</h3>
+          <img class="features-img" src="img/Shape-white.jpg" alt="" width="20" height="20">
           <p>Мы делаем своб работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
         </li>
         <li class="features-item">
           <h3>Круто</h3>
+          <img class="features-img" src="img/Shape-white.jpg" alt="" width="20" height="20">
           <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
         </li>
         <li class="features-item">
           <h3>Дорого</h3>
+          <img class="features-img" src="img/Shape-white.jpg" alt="" width="20" height="20">
           <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </li>
       </ul>
@@ -75,6 +83,8 @@
         </ul>
         <a class="button" href="news.html">Все новости</a>
       </section>
+
+      <img src="img/vertical.png" alt="" class="index-collumns_img">
 
       <section class="gallery">
         <h2>Фотогалерея</h2>
@@ -99,24 +109,25 @@
         <a href="map.html" class="button contacts-button">Как проехать</a>
         <a href="contacts.html" class="button contacts-button">Обратная связь</a>
       </section>
+      <img src="img/vertical.png" alt="" class="index-collumns_img">
       <section class="appointment">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время, и мы свяжемся с вами для подтверждения брони</p>
         <form action="https://echo.blabla.ru" class="appointment-form" method="post">
           <p class="appointment-item">
-            <label for="input-date">Дата</label>
+            <label for="input-date">Дата</label><br>
             <input id="input-date" type="text" name="date" value="" placeholder="08.10.2017">
           </p>
           <p class="appointment-item">
-            <label for="input-time">Время</label>
+            <label for="input-time">Время</label><br>
             <input id="input-time" type="text" name="time" value="" placeholder="10:00">
           </p>
           <p class="appointment-item">
-            <label for="input-name">Ваше Имя</label>
+            <label for="input-name">Ваше Имя</label><br>
             <input id="input-name" type="text" name="name" value="" placeholder="Борода">
           </p>
           <p class="appointment-item">
-            <label for="input-phone">Телефон</label>
+            <label for="input-phone">Телефон</label><br>
             <input id="input-phone" type="text" name="phone" value="" placeholder="+7 123 456-78-90">
           </p>
           <button class="button" type="submit">Отправить</button>
@@ -126,23 +137,36 @@
   </main>
 
   <footer class="main-footer">
-    <p class="footer-contacts">
-      Барбершоп "Бородинский"<br>
+    <div class="container-center">
+      <p class="footer-contacts">
+        Барбершоп "Бородинский"<br>
       Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="map.html">Как нас найти?</a>
-      Телефон: +7 (812) 666-02-66</p>
-    </p>
-    <div class="footer-social">
-      <b>Давайте дружить!</b>
-      <ul>
-        <li><a href="#" class="social-button">Вконтакте</a></li>
-        <li><a href="#" class="social-button">Фейсбук</a></li>
-        <li><a href="#" class="social-button">Инстаграм</a></li>
-      </ul>
-    </div>
-    <p class="footer-copyright">
-      <b>Разработано</b>
-      <a href="#" class="button">HTML Academy</a></p>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a href="#" class="social-button">
+            <img src="img/vk.png" alt="Вконтакте">          
+          </a></li>
+          <li><a href="#" class="social-button">
+            <img src="img/facebook.png" alt="Фейсбук">
+          
+          </a></li>
+          <li><a href="#" class="social-button">
+            <img src="img/instagram.png" alt="Инстаграм">
+          
+          </a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <span>
+          <b>Разработано</b><br>
+          <a href="#" class="button">HTML Academy</a>
+        </span>
+      </p>
+    </div>      
   </footer>
 
   <section class="modal modal-login">
@@ -174,7 +198,7 @@
       <img src="img/map-img.jpg" alt="г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
     </p>
     <button class="modal-close">Закрыть</button>
-  </section>
+  </section> 
 
 </body>
 </html>

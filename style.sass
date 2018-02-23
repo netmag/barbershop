@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic')
 
+html, body
+  min-width: 1122px
+  min-height: 1750px
+
 body 
   margin: 0
   padding: 0
@@ -27,46 +31,199 @@ a
   text-transform: uppercase
   background-color: #000
   border: none
+  width: 140px
+  height: 44px
+  display: inline-block
+  line-height: 3
   &:hover, &:focus, &:active
     background-color: #663d15
+.visually-hidden 
+  position: absolute
+  clip: rect(0 0 0 0)
+  width: 1px
+  height: 1px
+  margin: -1px
+
+.main-header
+  margin-bottom: 75px
 
 .main-navigation
   color: #fff
   font-size: 16px
   line-height: 20px
   background-color: #000
-
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: transparent
+.main-header-logo
+  order: 2
+.main-navigation-wrapper
+  width: 100%
+  margin-bottom: 60px
+  background-color: #000
+.container-center
+  width: 940px
+  margin: 0 auto
+  padding: 0 10px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
 .site-navigation, .user-navigation, .features-list, 
 .news-list, .breadcrumbs, .catalog-list, .pagination-list
   list-style: none
+
+.site-navigation, .user-navigation
+  margin: 0
+  padding: 0
+  width: 620px
+  display: flex
+  align-items: center
+  height: 70px
+  li 
+    padding: 0 20px
+.user-navigation
+  width: 140px
+  flex-direction: row-reverse
+  list-style-image: url("img/login.png")
+  li
+    padding: 0 22px 0 8px
+    margin-left: 76px
 
 .site-navigation, .user-navigation
   a 
     color: #fff
     &:hover, &:focus, &:active
       background-color: #242424
+
+.features
+  margin-bottom: 80px
+.features-list
+  display: flex
+  justify-content: space-between
+  width: 940px
+  padding: 0
+  margin: 0
+.index-collumns
+  display: flex
+  // justify-content: space-between
+  flex-wrap: nowrap
+  margin-bottom: 36px
+.news, .gallery
+  width: 348px
+  height: 314px
+  margin: 55px 36px 50px 81px
+.gallery
+  width: 300px
+.contacts, .appointment
+  margin: 55px 36px 50px 81px
+  width: 347px
+.appointment
+  width: 300px
+.appointment-form
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  button.button
+    width: 100%
+  label 
+    margin-left: 17px
+  input
+    padding-left: 17px
+    width: 120px
+    height: 43px
+.appointment-item
+  margin: 0
+  margin-bottom: 20px
+.contacts
+  p 
+    margin: 0
+    margin-bottom: 30px
+  &-button
+    margin-right: 20px
+.main-footer
+  padding: 62px 0 43px 0
+  p 
+    margin: 0
+
+.footer-social
+  width: 140px
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 0
+    width: 140px
+    margin: 0 auto
+    li 
+      width: 43px
+      height: 43px
+      background-color: #000
+.footer-contacts, .footer-social, .footer-copyright
+  flex-basis: 310px
+.footer-copyright
+  span
+    float: right
+  
+
 // item.html
+.small-logo
+  order: 0
+  align-items: center
+  display: inherit
+.main-header-item, .main-navigation-wrapper-item
+  margin: 0
+.main-header-item
+  margin-bottom: 55px
 .page-title
   font-family: inherit
   color: #000
   font-size: 30px
   font-weight: 700
   line-height: 42px
+  width: 100%
+  margin: 0
 .breadcrumbs 
   font-family: inherit
   font-size: 14px
   font-weight: 700
   line-height: 24px
+  width: 100%
+  display: flex
+  padding: 0
+  margin: 28px 0 55px 0
   a 
     color: #000 
   .breadcrumbs-current
     color:  #aba9a7
-
+  .shape
+    margin: 0 10px
+.product-photo
+  display: inherit
+  width: 460px
+  flex-wrap: wrap
+  &-preview
+    padding: 0
+    display: inherit
+    width: inherit
+    justify-content: space-between
+.product-info
+  width: 380px
+.capture-wrapper
+  display: flex
+  justify-content: space-between
+  margin: 26px 0 40px 0
+.product-availability, .product-article
+  margin: 0
 .features-item
   text-align: center
+  width: 300px
+  height: 155px
   h3 
     font-size: 30px
-    line-height: 42px
+    line-height: 30px
+    margin: 0 0 18px 0px
+.features-img
+  transform: rotate(45deg)
 .product-photo-full img, .product-photo-preview img
   box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2)
 .product-info, .facilites-prices
@@ -78,22 +235,32 @@ a
   .product-article
     color: #aeaeae
     text-align: right
+  .product-text
+    margin-bottom: 40px
   .product-price
+    margin-bottom: 67px
     b
       background-color: #e5e5e5
       background-image: url("img/fon-price.jpg")
       background-repeat: no-repeat
       text-align: center
       line-height: 20px
+      display: inline-block
+      width: 109px
+      height: 34px
+      padding-top: 10px
     a 
       text-align: center
       line-height: 20px
+      width: 78px
+      line-height: 3
   h3 
     font-size: 24px
     font-weight: 700
     line-height: 30px
   ul
     list-style-image: url("img/Shape.svg")
+    padding-left: 17px
 //--------------------------
 
 // shop.html
@@ -155,6 +322,7 @@ a
 .price-title
   overflow: hidden
   text-align: center
+  width: 100%
   h2
     display: inline-block
     vertical-align: middle
@@ -162,7 +330,8 @@ a
     color: #000
     font-size: 48px
     font-weight: 700
-    line-height: 20px
+    line-height: 48px
+    margin: 0
   &:before,
   &:after 
     content: ""
@@ -209,17 +378,34 @@ a
   background-image: url("img/pattern-light.jpg")
   background-position: 0 0
   background-repeat: repeat
+  width: 940px
   h2 
     font-size: 30px
-    line-height: 42px
-
-.news-item time
-  text-transform: none
+    line-height: 30px
+    margin: 0
+    margin-bottom: 30px
+.news-list
+  padding: 0
+  margin: 0
+.news-item 
+  p 
+    margin: 0
+    margin-bottom: 5px
+  time
+    text-transform: none
+    margin: 0 0 16px 0
+    display: inline-block
 
 .gallery-content
   background-color: #ccc
   border: 7px solid #fff
   line-height: 0
+  margin: 0
+  margin-bottom: 30px
+.gallery-button-back
+  float: left
+.gallery-button-next
+  float: right
 
 .appointment-item input
   font: inherit
@@ -246,16 +432,22 @@ a
   text-align: center
   ul
     list-style: none
+    li 
+      &:hover, &:focus, &:active
+        background-color: #663d15
 
 .social-button
   color: #fff
+  padding: 12px 10px
+  display: inherit
+
 
 .footer-copyright
   text-align: center
   .button
     &:hover, &:focus
-      color: #000
-      background-color: #fff
+      // color: #000
+      // background-color: #fff
 
 .modal
   color: #000
@@ -287,3 +479,19 @@ a
   text-decoration: underline
   &:hover, &:focus
     text-decoration: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
