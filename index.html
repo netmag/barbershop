@@ -91,7 +91,7 @@
         <figure class="gallery-content">
           <a href="#">
             <img src="img/Layer21.jpg" alt="Интерьер" width="286" height="164">
-          </a>          
+          </a>
         </figure>
         <button class="button gallery-button gallery-button-back">Назад</button>
         <button class="button gallery-button gallery-button-next">Вперед</button>
@@ -148,15 +148,15 @@
         <b>Давайте дружить!</b>
         <ul>
           <li><a href="#" class="social-button">
-            <img src="img/vk.png" alt="Вконтакте">          
+            <img src="img/vk.png" alt="Вконтакте">
           </a></li>
           <li><a href="#" class="social-button">
             <img src="img/facebook.png" alt="Фейсбук">
-          
+
           </a></li>
           <li><a href="#" class="social-button">
             <img src="img/instagram.png" alt="Инстаграм">
-          
+
           </a></li>
         </ul>
       </div>
@@ -166,39 +166,44 @@
           <a href="#" class="button">HTML Academy</a>
         </span>
       </p>
-    </div>      
+    </div>
   </footer>
 
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
+    <p>Введите пожалуйста свой логин и пароль.</p>
     <form action="https://echo.blabla.ru" class="login-form" method="post">
       <p>
         <label class="visually-hidden" for="input-login">Введите логин</label>
         <input id="input-login" type="text" class="login-icon-user" name="login" placeholder="Логин">
+        <span class="input-icon">
+          <img src="img/user.png" alt="">
+        </span>
       </p>
       <p>
         <label class="visually-hidden" for="input-password">Введите пароль</label>
         <input id="input-password" type="password" class="login-icon-user" name="password" placeholder="Пароль">
+        <span class="input-icon">
+          <img src="img/lock.png" alt="">
+        </span>
       </p>
       <p class="login-password-info">
-        <label class="login-checkbox">
-          <input type="checkbox" name="remember" class="visually-hidden">
-            <span class="checkbox-indicator">Запомните меня</span>
-        </label>
+        <input type="checkbox" name="remember" id="remember" class="visually-hidden filter-input filter-input-checkbox">
+        <label for="remember" class="checkbox-indicator">Запомните меня</label>
+
         <a href="#" class="restore">Я забыл пароль!</a>
       </p>
-      <button class="button" type="submit">Войти</button>
+      <button class="button login-button" type="submit">Войти</button>
     </form>
     <button class="modal-close">Закрыть</button>
   </section>
+
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p>
-      <img src="img/map-img.jpg" alt="г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
-    </p>
+    <!-- <img src="img/map-img.jpg" alt="г. Санкт-Петербург, Б. Конюшенная, д. 19/8"> -->
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBehUFwi~A" width="766" height="560" frameborder="0"></iframe>
     <button class="modal-close">Закрыть</button>
-  </section> 
+  </section>
 
 </body>
 </html>
