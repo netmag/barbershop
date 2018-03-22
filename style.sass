@@ -82,24 +82,36 @@ a
   height: 70px
   li 
     padding: 25px 0 20px 0
-    margin: 0 20px
     border-bottom: 4px solid transparent
+  a 
+    color: #fff
+    padding: 24px 20px
+    &:hover, &:focus, &:active
+      background-color: #242424
   .site-navigation-active  
     border-bottom: 4px solid #fff
+    a 
+      &:hover, &:focus, &:active
+      background-color: transparent
 .user-navigation
   width: 140px
   flex-direction: row-reverse
-  list-style-image: url("img/login.png")
+  // list-style-image: url("img/login.png")
   li
     padding: 0 22px 0 8px
     margin-left: 76px
-
-.site-navigation, .user-navigation
-  a 
-    color: #fff
-    &:hover, &:focus, &:active
-      background-color: #242424
-
+.login-link
+  display: flex
+  justify-content: space-between
+  width: 107px
+  align-items: center
+  img 
+    opacity: .5
+  &:hover, &:focus, &:active
+    background-color: #242424
+    height: 60px
+    .login-link img
+      opacity: 1
 .features
   margin-bottom: 80px
 .features-list
@@ -584,9 +596,40 @@ a
   background-image: url("img/pattern-light.jpg")
   background-position: 0 0
   background-repeat: repeat
+  position: fixed
+  box-shadow: 0 30px 50px rgba(0,0,0,0.7) 
   h2 
     font-size: 30px
     line-height: 42px
+.modal-login
+  width: 300px
+  padding: 50px 80px
+  top: 120px
+  left: 50%
+  margin-left: -230px
+.modal-close
+  width: 22px
+  height: 22px
+  font-size: 0
+  background-color: transparent
+  border: none
+  cursor: pointer
+  position: absolute
+  top: 0
+  right: -34px
+  &::before, &::after
+    content: ""
+    position: absolute
+    width: 24px
+    height: 3px
+    background-color: #d0d0d0
+    top: 9px
+    left: -1px
+  &::before
+    transform: rotate(45deg)
+  &::after
+    transform: rotate(-45deg)
+
 
 .login-form
   input[type="text"], input[type="password"]

@@ -89,23 +89,36 @@ a {
   height: 70px; }
   .site-navigation li, .user-navigation li {
     padding: 25px 0 20px 0;
-    margin: 0 20px;
     border-bottom: 4px solid transparent; }
+  .site-navigation a, .user-navigation a {
+    color: #fff;
+    padding: 24px 20px; }
+    .site-navigation a:hover, .site-navigation a:focus, .site-navigation a:active, .user-navigation a:hover, .user-navigation a:focus, .user-navigation a:active {
+      background-color: #242424; }
   .site-navigation .site-navigation-active, .user-navigation .site-navigation-active {
     border-bottom: 4px solid #fff; }
+    .site-navigation .site-navigation-active a, .user-navigation .site-navigation-active a {
+      background-color: transparent; }
 
 .user-navigation {
   width: 140px;
-  flex-direction: row-reverse;
-  list-style-image: url("img/login.png"); }
+  flex-direction: row-reverse; }
   .user-navigation li {
     padding: 0 22px 0 8px;
     margin-left: 76px; }
 
-.site-navigation a, .user-navigation a {
-  color: #fff; }
-  .site-navigation a:hover, .site-navigation a:focus, .site-navigation a:active, .user-navigation a:hover, .user-navigation a:focus, .user-navigation a:active {
-    background-color: #242424; }
+.login-link {
+  display: flex;
+  justify-content: space-between;
+  width: 107px;
+  align-items: center; }
+  .login-link img {
+    opacity: 0.5; }
+  .login-link:hover, .login-link:focus, .login-link:active {
+    background-color: #242424;
+    height: 60px; }
+    .login-link:hover .login-link img, .login-link:focus .login-link img, .login-link:active .login-link img {
+      opacity: 1; }
 
 .features {
   margin-bottom: 80px; }
@@ -611,10 +624,42 @@ a {
   background-color: #F8F3F0;
   background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  position: fixed;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7); }
   .modal h2 {
     font-size: 30px;
     line-height: 42px; }
+
+.modal-login {
+  width: 300px;
+  padding: 50px 80px;
+  top: 120px;
+  left: 50%;
+  margin-left: -230px; }
+
+.modal-close {
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -34px; }
+  .modal-close::before, .modal-close::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background-color: #d0d0d0;
+    top: 9px;
+    left: -1px; }
+  .modal-close::before {
+    transform: rotate(45deg); }
+  .modal-close::after {
+    transform: rotate(-45deg); }
 
 .login-form input[type="text"], .login-form input[type="password"] {
   font: inherit;
