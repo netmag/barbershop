@@ -18,10 +18,5 @@ function main() {
 	map.onmouseup = () => visible(modalMap);
 	modalClose.onmouseup = () => hidden(modalLogin);
 	modalCloseMap.onmouseup = () => hidden(modalMap);
-	// document.getElementById('loglin').onclick = () => {
-	// 	this.style.visibility = 'visible';
-	// };
-
-
 
 };
